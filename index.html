@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="bg-BG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Конна база Хидалго – Радомир, кв. Църква | Конна езда и детски лагери</title>
+    <meta name="description" content="Конна база Хидалго в Радомир, квартал Църква. Предлагаме уроци по конна езда, разходки сред природата, детски летни лагери с нощувки, рожденни дни и фотосесии с коне.">
+    <meta name="keywords" content="конна база Хидалго, Радомир, кв Църква, конна езда, уроци по езда, детски лагер с коне, разходки с коне Радомир, езда Перник">
+    
+    <!-- Open Graph / Социални мрежи -->
+    <meta property="og:title" content="Конна база Хидалго – Радомир, кв. Църква">
+    <meta property="og:description" content="Потопете се в магията на конете – само на 5 минути от центъра на Радомир. Детски лагери, уроци, преходи и незабравими емоции.">
+    <meta property="og:image" content="hidalgo_og.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hidalgo-ranch.com">
+    
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            line-height: 1.6; 
+            color: #1e1e2f; 
+            overflow-x: hidden;
+            padding-top: 90px;
+            background: linear-gradient(135deg, #fcf9f5 0%, #fefcf9 100%);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        
+        /* ---------- НАВИГАЦИЯ – луксозно черно/златно ---------- */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 20, 0.96);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+            padding: 12px 0;
+            border-bottom: 3px solid #c9a05e;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            font-weight: 900;
+            background: linear-gradient(45deg, #e4c580, #f6e6b2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+            text-decoration: none;
+            line-height: 1.1;
+        }
+        
+        .logo span {
+            font-size: 0.6em;
+            background: none;
+            -webkit-text-fill-color: #c9a05e;
+            display: block;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-shadow: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            padding: 8px 18px;
+            border-radius: 40px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.8px;
+            border: 1px solid transparent;
+        }
+        
+        .nav-links a:hover {
+            border-color: #c9a05e;
+            color: #f6e6b2;
+            background: rgba(201, 160, 94, 0.12);
+        }
+        
+        .nav-links a.active {
+            background: #c9a05e;
+            color: #0a0a14;
+            border: 1px solid #e4c580;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8em;
+            color: #c9a05e;
+            cursor: pointer;
+        }
+        
+        /* ---------- ХЕРО СЕКЦИЯ – конна база ---------- */
+        header { 
+            background: linear-gradient(
+                rgba(0,0,0,0.7),
+                rgba(0,0,0,0.5)
+            ),
+            url('https://images.unsplash.com/photo-1534771621966-618e44911c6e?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center 40%;
+            color: white; 
+            text-align: center; 
+            padding: 160px 20px;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -90px;
+            position: relative;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #c9a05e, #e4c580, #f6e6b2, #e4c580, #c9a05e);
+        }
+        
+        header h1 { 
+            font-size: 5em; 
+            font-weight: 900; 
+            margin-bottom: 15px; 
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, #fff, #f6e6b2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        header .subtitle {
+            font-size: 1.8em; 
+            font-weight: 500; 
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            color: rgba(255,255,255,0.98);
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+        
+        .hero-badge {
+            background: rgba(201, 160, 94, 0.25);
+            backdrop-filter: blur(6px);
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: 1px solid rgba(230, 200, 140, 0.7);
+            margin-bottom: 30px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #f6e6b2;
+            letter-spacing: 2px;
+        }
+        
+        .hero-badge i {
+            color: #f6e6b2;
+            margin: 0 6px;
+        }
+        
+        .hero-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #c9a05e, #b48a4b);
+            color: #0a0a14;
+            padding: 18px 48px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            border: none;
+            box-shadow: 0 10px 30px rgba(201, 160, 94, 0.4);
+            transition: all 0.3s ease;
+            letter-spacing: 2px;
+            border: 1px solid #e4c580;
+            margin-top: 20px;
+        }
+        
+        .hero-button:hover {
+            background: linear-gradient(145deg, #b48a4b, #9f763d);
+            color: white;
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(201, 160, 94, 0.5);
+            border-color: #f6e6b2;
+        }
+        
+        /* ---------- КОНТЕЙНЪР И СЕКЦИИ – луксозен заоблен стил ---------- */
+        .container { 
+            max-width: 1300px; 
+            margin: 0 auto; 
+            padding: 0 30px; 
+        }
+        
+        section { 
+            background: white; 
+            margin: 70px 0; 
+            padding: 60px 50px; 
+            border-radius: 30px; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+            scroll-margin-top: 110px;
+            border: 1px solid rgba(201, 160, 94, 0.2);
+            position: relative;
+        }
+        
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 40px;
+            right: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #c9a05e, #e4c580, #f6e6b2, #e4c580, #c9a05e, transparent);
+            border-radius: 100%;
+        }
+        
+        h2 { 
+            color: #1e1e2f; 
+            font-size: 2.8em; 
+            margin-bottom: 45px; 
+            text-align: center;
+            position: relative;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 i {
+            color: #c9a05e;
+            margin-right: 15px;
+            font-size: 0.9em;
+        }
+        
+        h2::after {
+            content: '';
+            display: block;
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(90deg, #c9a05e, #e4c580, #f6e6b2);
+            margin: 25px auto 0;
+            border-radius: 4px;
+        }
+        
+        /* ---------- УСЛУГИ – конна езда, лагери, събития ---------- */
+        .services-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-item { 
+            background: linear-gradient(145deg, #ffffff, #fcf9f5); 
+            padding: 35px 25px; 
+            border-radius: 24px; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.03);
+            border-bottom: 5px solid #c9a05e;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 1.15em;
+            border: 1px solid rgba(201,160,94,0.2);
+            border-bottom-width: 5px;
+        }
+        
+        .service-item i {
+            font-size: 2.2em;
+            color: #c9a05e;
+            width: 50px;
+            text-align: center;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(201, 160, 94, 0.15);
+            border-bottom-color: #b48a4b;
+            background: white;
+        }
+        
+        /* ---------- ЗА НАС – Хидалго, Радомир, кв. Църква ---------- */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .about-image {
+            flex: 0 0 400px;
+            width: 400px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.25);
+            border: 4px solid rgba(201,160,94,0.4);
+            transition: transform 0.4s;
+        }
+        
+        .about-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-highlight {
+            background: linear-gradient(135deg, #1e1e2f, #2c2c3f);
+            color: #f6e6b2;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            font-size: 1.3em;
+            font-weight: 600;
+            text-align: center;
+            border-left: 10px solid #c9a05e;
+            letter-spacing: 1px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        
+        .about-standards {
+            background: #faf7f2;
+            padding: 35px;
+            border-radius: 24px;
+            margin: 30px 0;
+            border-left: 10px solid #c9a05e;
+        }
+        
+        .about-standards h3 {
+            color: #1e1e2f;
+            font-size: 1.6em;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .about-standards h3 i {
+            color: #c9a05e;
+            font-size: 1.4em;
+        }
+        
+        .about-standards ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .about-standards li {
+            padding: 16px 0;
+            position: relative;
+            padding-left: 40px;
+            font-weight: 500;
+            border-bottom: 1px dashed rgba(0,0,0,0.06);
+            font-size: 1.05em;
+        }
+        
+        .about-standards li:last-child {
+            border-bottom: none;
+        }
+        
+        .about-standards li::before {
+            content: '🐴';
+            position: absolute;
+            left: 0;
+            color: #c9a05e;
+            font-size: 1.3em;
+        }
+        
+        .human-touch {
+            font-style: italic;
+            color: #4a4a5a;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 35px;
+            padding: 30px;
+            background: #fdfbf9;
+            border-radius: 20px;
+            border-left: 6px solid #c9a05e;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            font-weight: 500;
+        }
+        
+        /* ---------- ДЕТСКИ ЛАГЕР – специална секция ---------- */
+        .camp-section {
+            background: linear-gradient(145deg, #1e1e2f, #252538);
+            color: white;
+            border: none;
+        }
+        
+        .camp-section h2 {
+            color: #f6e6b2;
+        }
+        
+        .camp-section h2::after {
+            background: linear-gradient(90deg, #f6e6b2, #c9a05e);
+        }
+        
+        .camp-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .camp-content {
+            padding-right: 20px;
+        }
+        
+        .camp-content h3 {
+            font-size: 2em;
+            color: #f6e6b2;
+            margin-bottom: 20px;
+        }
+        
+        .camp-content p {
+            font-size: 1.15em;
+            margin-bottom: 25px;
+            color: #ddd;
+            line-height: 1.7;
+        }
+        
+        .camp-features {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .camp-features li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.1em;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .camp-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .camp-features li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: #c9a05e;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .camp-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: 3px solid #c9a05e;
+        }
+        
+        .camp-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+        
+        .camp-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .camp-button {
+            display: inline-block;
+            background: transparent;
+            color: #f6e6b2;
+            padding: 16px 38px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            border: 2px solid #c9a05e;
+            transition: 0.3s;
+            font-size: 1.15em;
+            margin-top: 15px;
+            letter-spacing: 1.5px;
+        }
+        
+        .camp-button:hover {
+            background: #c9a05e;
+            color: #0a0a14;
+            border-color: #e4c580;
+        }
+        
+        /* ---------- ГАЛЕРИЯ – мини мрежа ---------- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+            border: 2px solid rgba(201,160,94,0.3);
+            transition: all 0.3s;
+            aspect-ratio: 1 / 1;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover {
+            border-color: #c9a05e;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px rgba(201,160,94,0.25);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .gallery-link {
+            display: inline-block;
+            padding: 14px 40px;
+            background: #1e1e2f;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+            border: 1px solid #c9a05e;
+        }
+        
+        .gallery-link:hover {
+            background: #c9a05e;
+            color: #0a0a14;
+        }
+        
+        /* ---------- КОНТАКТИ + КАРТА (Радомир, кв. Църква) ---------- */
+        .contact {
+            background: white;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        
+        .contact-card {
+            background: #fdfbf9;
+            padding: 30px;
+            border-radius: 24px;
+            flex: 1 1 220px;
+            border: 1px solid #eaeaea;
+            transition: all 0.3s;
+            border-bottom: 4px solid #c9a05e;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 30px rgba(201,160,94,0.12);
+        }
+        
+        .contact-card i {
+            font-size: 2.3em;
+            color: #c9a05e;
+            margin-bottom: 18px;
+        }
+        
+        .contact-card h4 {
+            font-size: 1.5em;
+            margin-bottom: 12px;
+            color: #1e1e2f;
+        }
+        
+        .contact-card p, .contact-card a {
+            color: #4a4a5a;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05em;
+        }
+        
+        .contact-card a:hover {
+            color: #c9a05e;
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            margin-top: 40px;
+            border: 3px solid #c9a05e;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 45px;
+            flex-wrap: wrap;
+        }
+        
+        .social-link {
+            background: #1e1e2f;
+            padding: 15px 30px;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 1px solid #c9a05e;
+        }
+        
+        .social-link i {
+            font-size: 1.4em;
+            color: #c9a05e;
+        }
+        
+        .social-link:hover {
+            background: #c9a05e;
+            color: #0a0a14;
+        }
+        
+        .social-link:hover i {
+            color: #0a0a14;
+        }
+        
+        /* ---------- ФУТЪР ---------- */
+        footer { 
+            background: #0a0a14; 
+            color: #aaa; 
+            text-align: center; 
+            padding: 60px 30px; 
+            font-size: 1.1em;
+            margin-top: 80px;
+            border-top: 4px solid #c9a05e;
+        }
+        
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            font-weight: 900;
+            background: linear-gradient(45deg, #e4c580, #f6e6b2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo span {
+            font-size: 0.6em;
+            display: block;
+            -webkit-text-fill-color: #c9a05e;
+            letter-spacing: 5px;
+        }
+        
+        /* ---------- РЕСПОНСИВ ---------- */
+        @media (max-width: 992px) {
+            .about-image { flex: 0 0 100%; width: 100%; max-width: 500px; margin: 0 auto; }
+            .camp-grid { grid-template-columns: 1fr; }
+            .camp-content { padding-right: 0; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 768px) { 
+            body { padding-top: 80px; }
+            .nav-links { display: none; position: fixed; top: 80px; left: 0; width: 100%; background: #0a0a14; flex-direction: column; padding: 30px; gap: 20px; border-top: 2px solid #c9a05e; }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            header { padding: 120px 20px; min-height: 80vh; margin-top: -80px; }
+            header h1 { font-size: 3.2em; }
+            .hero-badge { font-size: 0.95em; padding: 8px 20px; }
+            section { margin: 40px 0; padding: 40px 25px; }
+            h2 { font-size: 2.2em; }
+            .contact-details { flex-direction: column; }
+            .map-container { height: 280px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 { font-size: 2.4em; }
+            .subtitle { font-size: 1.3em; }
+            .hero-button { padding: 14px 32px; font-size: 1em; }
+            .service-item { font-size: 1em; }
+            .social-link { width: 100%; justify-content: center; }
+            .about-highlight { font-size: 1.1em; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- НАВИГАЦИЯ – Хидалго, луксозно черно/златно -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Хидалго<span>КОННА БАЗА</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#home" class="active">Начало</a>
+                <a href="#services">Услуги</a>
+                <a href="#about">За нас</a>
+                <a href="#camp">Детски лагер</a>
+                <a href="#gallery">Галерия</a>
+                <a href="#contact">Контакти</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ХЕРО СЕКЦИЯ – Конна база Хидалго, Радомир, кв. Църква -->
+    <header id="home">
+        <div class="hero-badge">
+            <i class="fas fa-horse-head"></i> РАДОМИР, КВ. ЦЪРКВА <i class="fas fa-horse-head"></i>
+        </div>
+        <h1>Хидалго</h1>
+        <p class="subtitle">Конна езда сред природата – само на 5 минути от центъра на Радомир</p>
+        <a href="#services" class="hero-button"><i class="fas fa-calendar-check"></i> ЗАПАЗИ ЧАС</a>
+    </header>
+    
+    <div class="container">
+        <!-- УСЛУГИ – Конна езда, лагери, събития -->
+        <section id="services">
+            <h2><i class="fas fa-horse"></i> Нашите услуги</h2>
+            <ul class="services-grid">
+                <li class="service-item"><i class="fas fa-graduation-cap"></i> Уроци по езда (начинаещи/напреднали)</li>
+                <li class="service-item"><i class="fas fa-tree"></i> Преходи в планината с коне</li>
+                <li class="service-item"><i class="fas fa-campground"></i> Детски летни лагери с нощувки</li>
+                <li class="service-item"><i class="fas fa-birthday-cake"></i> Рожденни дни и тържества</li>
+                <li class="service-item"><i class="fas fa-camera"></i> Фотосесии с коне</li>
+                <li class="service-item"><i class="fas fa-heart"></i> Конна терапия и релакс</li>
+            </ul>
+        </section>
+        
+        <!-- ЗА НАС – Конна база Хидалго, Радомир, кв. Църква -->
+        <section id="about">
+            <h2><i class="fas fa-star"></i> За конна база Хидалго</h2>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=1974&auto=format&fit=crop" alt="Конна база Хидалго – Радомир, кв. Църква" class="about-image">
+                <div class="about-text">
+                    <div class="about-highlight">
+                        🏆 Добре дошли в Хидалго – нашият дом и вашата нова любов към конете!
+                    </div>
+                    
+                    <div class="about-standards">
+                        <h3><i class="fas fa-medal"></i> Защо Хидалго?</h3>
+                        <ul>
+                            <li>Разположена в тихия квартал "Църква" – Радомир</li>
+                            <li>Опитни инструктори с индивидуален подход</li>
+                            <li>Здравословни и добре обучени коне</li>
+                            <li>Пясъчен манеж и маршрути за преходи</li>
+                            <li>Организиране на детски лагери от 2019 г.</li>
+                        </ul>
+                    </div>
+
+                    <div class="human-touch">
+                        „Вярваме, че конят е най-добрият учител – учи ни на търпение, отговорност и истинско приятелство. 
+                        Елате да се запознаете лично!“
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ДЕТСКИ ЛЕТЕН ЛАГЕР – специална секция с нощувки -->
+        <section id="camp" class="camp-section">
+            <h2><i class="fas fa-campground"></i> Детски летен лагер 2026</h2>
+            <div class="camp-grid">
+                <div class="camp-content">
+                    <h3>Приключение сред конете</h3>
+                    <p>Конна база Хидалго организира <strong>детски лагери с нощувки в палатки</strong> за деца от 7 до 14 години. Лагерът се провежда на територията на базата – <strong>Радомир, кв. Църква</strong>.</p>
+                    
+                    <ul class="camp-features">
+                        <li>Ежедневни уроци по конна езда</li>
+                        <li>Грижи за конете – хранене, седловка, чистене</li>
+                        <li>Преходи сред природата</li>
+                        <li>Творчески работилници и игри на открито</li>
+                        <li>Нощувки в палатки (осигурени от базата)</li>
+                        <li>Лагерен огън и вечерни истории</li>
+                    </ul>
+                    
+                    <a href="#contact" class="camp-button"><i class="fas fa-tent"></i> ЗАПИШИ ДЕТЕ</a>
+                </div>
+                <div class="camp-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop" alt="Детски лагер с коне Хидалго, Радомир">
+                </div>
+            </div>
+        </section>
+        
+        <!-- ГАЛЕРИЯ – мини галерия -->
+        <section id="gallery">
+            <h2><i class="fas fa-camera"></i> Галерия</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=1974&auto=format&fit=crop" alt="Конна езда Хидалго">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534771621966-618e44911c6e?q=80&w=2070&auto=format&fit=crop" alt="Коне в Хидалго">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599059758332-11a9df2b7bfd?q=80&w=1974&auto=format&fit=crop" alt="Детски лагер с коне">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605717662012-6d348a3b1055?q=80&w=1974&auto=format&fit=crop" alt="Разходка с коне Радомир">
+                </div>
+            </div>
+            <div class="gallery-button">
+                <a href="#" class="gallery-link"><i class="fas fa-images"></i> Виж всички снимки</a>
+            </div>
+        </section>
+        
+        <!-- КОНТАКТИ + КАРТА (Радомир, кв. Църква) + СОЦИАЛНИ МРЕЖИ -->
+        <section id="contact" class="contact">
+            <h2><i class="fas fa-address-card"></i> Свържете се с нас</h2>
+            
+            <div class="contact-details">
+                <div class="contact-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h4>Адрес</h4>
+                    <p><strong>Радомир, кв. Църква</strong><br>ул. "Георги Димитров" 15</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-directions" style="color:#c9a05e;"></i> Само на 5 мин. от центъра</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Телефон</h4>
+                    <p><a href="tel:0889123456">0889 123 456</a></p>
+                    <p><a href="tel:0877123456">0877 123 456</a></p>
+                    <p style="margin-top: 8px;"><i class="fas fa-clock" style="color:#c9a05e;"></i> 9:00 – 19:00, всеки ден</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Имейл</h4>
+                    <p><a href="mailto:info@hidalgo-ranch.com">info@hidalgo-ranch.com</a></p>
+                    <p style="margin-top: 8px;"><i class="fas fa-user"></i> Полина – управител</p>
+                </div>
+            </div>
+            
+            <!-- КАРТА – Радомир, кв. Църква -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=22.998%2C42.540%2C23.028%2C42.560&layer=mapnik&marker=42.550%2C23.013" 
+                    style="border:0; width:100%; height:100%;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Конна база Хидалго – Радомир, кв. Църква">
+                </iframe>
+            </div>
+            
+            <!-- СОЦИАЛНИ МРЕЖИ -->
+            <div class="social-links">
+                <a href="#" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i> Хидалго Радомир</a>
+                <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i> @hidalgo_ranch</a>
+                <a href="#" class="social-link" target="_blank"><i class="fab fa-tiktok"></i> @hidalgo.konne</a>
+            </div>
+        </section>
+        
+        <!-- VIP ПРЕДЛОЖЕНИЕ – Ранно записване за лагер -->
+        <section class="camp-section" style="margin-bottom: 30px;">
+            <h2><i class="fas fa-gift"></i> Ранно записване за лагер 2026</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #f6e6b2; max-width: 800px; margin: 0 auto 25px;">
+                Запазете място до 30 април и получете 15% отстъпка + безплатна фотосесия!
+            </p>
+            <div style="text-align: center;">
+                <a href="#contact" class="camp-button"><i class="fas fa-percent"></i> Попитай за промоция</a>
+            </div>
+        </section>
+    </div>
+    
+    <!-- ФУТЪР -->
+    <footer>
+        <div class="footer-logo">ХидалГО<span>КОННА БАЗА</span></div>
+        <p style="color:#c9a05e; margin-bottom: 20px; font-size: 1.2em; letter-spacing: 3px;">РАДОМИР · КВ. ЦЪРКВА</p>
+        <p><i class="fas fa-map-marker-alt" style="color:#c9a05e;"></i> Радомир, квартал "Църква" 2300</p>
+        <p><i class="fas fa-phone" style="color:#c9a05e;"></i> 0889 123 456 | <i class="fas fa-envelope" style="color:#c9a05e;"></i> info@hidalgo-ranch.com</p>
+        <p style="margin-top: 35px; opacity: 0.8;">© 2026 Конна база Хидалго. Всички права запазени.</p>
+        <p style="font-size: 0.85em; margin-top: 15px; color: #888;">Сайт с луксозно излъчване за конна езда и детски лагери.</p>
+    </footer>
+
+    <script>
+        // МОБИЛНО МЕНЮ
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // ЗАТВАРЯНЕ ПРИ КЛИК ВЪРХУ ЛИНК
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+        
+        // АКТИВЕН ЛИНК ПРИ СКРОЛ
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 250)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Home секция (header)
+            if (window.pageYOffset < 200) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                const homeLink = document.querySelector('.nav-links a[href="#home"]');
+                if (homeLink) homeLink.classList.add('active');
+            }
+        });
+        
+        // ПЛАВНО СКРОЛИРАНЕ
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
