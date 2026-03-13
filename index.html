@@ -12,7 +12,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Конна база Хидалго – Радомир, кв. Върба">
     <meta property="og:description" content="Подарете си незабравимо изживяване с добре обучени коне. Уроци, хипотерапия, партита и тематични дни сред природата.">
-    <meta property="og:image" content="hidalgo_og.jpg">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?q=80&w=1200&auto=format&fit=crop">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hidalgo-ranch.com">
     
@@ -128,7 +128,7 @@
                 rgba(0,0,0,0.7),
                 rgba(0,0,0,0.5)
             ),
-            url('https://images.unsplash.com/photo-1534771621966-618e44911c6e?q=80&w=2070&auto=format&fit=crop');
+            url('https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center 40%;
             color: white; 
@@ -327,7 +327,7 @@
             background: white;
         }
         
-        /* ---------- ЦЕНОВА ИНФОРМАЦИЯ (нова секция) ---------- */
+        /* ---------- ЦЕНОВА ИНФОРМАЦИЯ ---------- */
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -492,62 +492,6 @@
             font-weight: 500;
         }
         
-        /* ---------- КАЛЕНДАР НА СЪБИТИЯТА (нова секция) ---------- */
-        .events-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        .event-card {
-            background: #fdfbf9;
-            padding: 30px;
-            border-radius: 24px;
-            border: 1px solid rgba(201,160,94,0.2);
-            transition: 0.3s;
-        }
-        
-        .event-card:hover {
-            border-color: #c9a05e;
-            box-shadow: 0 15px 30px rgba(201,160,94,0.1);
-        }
-        
-        .event-date {
-            color: #c9a05e;
-            font-weight: 700;
-            font-size: 1.2em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .event-date i {
-            font-size: 1.4em;
-        }
-        
-        .event-title {
-            font-size: 1.5em;
-            font-weight: 700;
-            color: #1e1e2f;
-            margin-bottom: 10px;
-        }
-        
-        .event-desc {
-            color: #4a4a5a;
-            margin-bottom: 20px;
-        }
-        
-        .event-link {
-            color: #c9a05e;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
         /* ---------- ДЕТСКИ ПАРТИТА ---------- */
         .party-section {
             background: linear-gradient(145deg, #1e1e2f, #252538);
@@ -653,6 +597,62 @@
             border-color: #e4c580;
         }
         
+        /* ---------- КАЛЕНДАР НА СЪБИТИЯТА ---------- */
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .event-card {
+            background: #fdfbf9;
+            padding: 30px;
+            border-radius: 24px;
+            border: 1px solid rgba(201,160,94,0.2);
+            transition: 0.3s;
+        }
+        
+        .event-card:hover {
+            border-color: #c9a05e;
+            box-shadow: 0 15px 30px rgba(201,160,94,0.1);
+        }
+        
+        .event-date {
+            color: #c9a05e;
+            font-weight: 700;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .event-date i {
+            font-size: 1.4em;
+        }
+        
+        .event-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #1e1e2f;
+            margin-bottom: 10px;
+        }
+        
+        .event-desc {
+            color: #4a4a5a;
+            margin-bottom: 20px;
+        }
+        
+        .event-link {
+            color: #c9a05e;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
         /* ---------- ОТЗИВИ ---------- */
         .reviews-grid {
             display: grid;
@@ -712,7 +712,7 @@
             margin-top: 5px;
         }
         
-        /* ---------- ГАЛЕРИЯ ---------- */
+        /* ---------- ГАЛЕРИЯ (актуализирани снимки) ---------- */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -962,7 +962,7 @@
         </div>
     </nav>
 
-    <!-- ХЕРО СЕКЦИЯ с нов слоган -->
+    <!-- ХЕРО СЕКЦИЯ -->
     <header id="home">
         <div class="hero-badge">
             <i class="fas fa-horse-head"></i> РАДОМИР, КВ. ВЪРБА <i class="fas fa-horse-head"></i>
@@ -976,7 +976,7 @@
     </header>
     
     <div class="container">
-        <!-- УСЛУГИ (разширени) -->
+        <!-- УСЛУГИ -->
         <section id="services">
             <h2><i class="fas fa-horse"></i> Нашите услуги</h2>
             <ul class="services-grid">
@@ -991,7 +991,7 @@
             </ul>
         </section>
         
-        <!-- ЦЕНОВА ИНФОРМАЦИЯ (нова секция) -->
+        <!-- ЦЕНИ -->
         <section id="pricing">
             <h2><i class="fas fa-tag"></i> Ориентировъчни цени</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; font-size: 1.2em; color: #4a4a5a;">
@@ -1022,7 +1022,7 @@
         <section id="about">
             <h2><i class="fas fa-star"></i> За конна база Хидалго</h2>
             <div class="about-content">
-                <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=1974&auto=format&fit=crop" alt="Конна база Хидалго – Радомир, кв. Върба" class="about-image">
+                <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=1974&auto=format&fit=crop" alt="Конна база Хидалго – Радомир, кв. Върба" class="about-image" loading="lazy">
                 <div class="about-text">
                     <div class="about-highlight">
                         🏆 Добре дошли в Хидалго – нашият дом и вашата нова любов към конете!
@@ -1048,7 +1048,7 @@
             </div>
         </section>
         
-        <!-- ДЕТСКИ ПАРТИТА (запазена) -->
+        <!-- ДЕТСКИ ПАРТИТА -->
         <section id="party" class="party-section">
             <h2><i class="fas fa-birthday-cake"></i> Детски партита с езда</h2>
             <div class="party-grid">
@@ -1068,12 +1068,12 @@
                     <a href="#contact" class="party-button"><i class="fas fa-balloon"></i> ЗАПИТВАНЕ ЗА ДАТА</a>
                 </div>
                 <div class="party-image">
-                    <img src="https://images.unsplash.com/photo-1605717662012-6d348a3b1055?q=80&w=1974&auto=format&fit=crop" alt="Детско парти с коне Хидалго, Радомир">
+                    <img src="https://images.unsplash.com/photo-1586473216707-b185209b4902?q=80&w=1974&auto=format&fit=crop" alt="Детско парти с коне Хидалго, Радомир" loading="lazy">
                 </div>
             </div>
         </section>
         
-        <!-- КАЛЕНДАР НА СЪБИТИЯТА (нова секция) -->
+        <!-- КАЛЕНДАР НА СЪБИТИЯТА -->
         <section id="events">
             <h2><i class="fas fa-calendar-alt"></i> Предстоящи събития</h2>
             <div class="events-grid">
@@ -1111,14 +1111,14 @@
             </div>
         </section>
         
-        <!-- ГАЛЕРИЯ -->
+        <!-- ГАЛЕРИЯ (с работещи Unsplash снимки) -->
         <section id="gallery">
             <h2><i class="fas fa-camera"></i> Галерия</h2>
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=1974&auto=format&fit=crop" alt="Конна езда Хидалго"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1534771621966-618e44911c6e?q=80&w=2070&auto=format&fit=crop" alt="Коне в Хидалго"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1599059758332-11a9df2b7bfd?q=80&w=1974&auto=format&fit=crop" alt="Детско парти с коне"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1605717662012-6d348a3b1055?q=80&w=1974&auto=format&fit=crop" alt="Разходка с коне Радомир"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=1974&auto=format&fit=crop" alt="Конна езда Хидалго" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?q=80&w=2070&auto=format&fit=crop" alt="Коне в Хидалго" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1586473216707-b185209b4902?q=80&w=1974&auto=format&fit=crop" alt="Детско парти с коне" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1542816417-0983a9c9a5b3?q=80&w=1974&auto=format&fit=crop" alt="Разходка с коне Радомир" loading="lazy"></div>
             </div>
             <div class="gallery-button">
                 <a href="#" class="gallery-link"><i class="fas fa-images"></i> Виж всички снимки</a>
@@ -1128,7 +1128,7 @@
             </div>
         </section>
         
-        <!-- КОНТАКТИ с актуализирани телефони и Instagram -->
+        <!-- КОНТАКТИ -->
         <section id="contact" class="contact">
             <h2><i class="fas fa-address-card"></i> Свържете се с нас</h2>
             
@@ -1165,7 +1165,7 @@
                 </iframe>
             </div>
             
-            <!-- СОЦИАЛНИ МРЕЖИ (актуализиран Instagram) -->
+            <!-- СОЦИАЛНИ МРЕЖИ -->
             <div class="social-links">
                 <a href="#" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i> Конна База Хидалго</a>
                 <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i> @konnabazahidalgo</a>
