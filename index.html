@@ -48,7 +48,7 @@
             backdrop-filter: blur(8px);
             box-shadow: 0 4px 25px rgba(0,0,0,0.2);
             z-index: 1000;
-            padding: 12px 0;
+            padding: 8px 0;
             border-bottom: 3px solid #c9a05e;
         }
         
@@ -61,27 +61,15 @@
             align-items: center;
         }
         
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2em;
-            font-weight: 900;
-            background: linear-gradient(45deg, #e4c580, #f6e6b2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-            letter-spacing: 2px;
-            text-decoration: none;
-            line-height: 1.1;
+        .logo-img {
+            height: 70px;
+            width: auto;
+            display: block;
+            transition: transform 0.3s ease;
         }
         
-        .logo span {
-            font-size: 0.6em;
-            background: none;
-            -webkit-text-fill-color: #c9a05e;
-            display: block;
-            font-weight: 600;
-            letter-spacing: 4px;
-            text-shadow: none;
+        .logo-img:hover {
+            transform: scale(1.05);
         }
         
         .nav-links {
@@ -712,7 +700,7 @@
             margin-top: 5px;
         }
         
-        /* ---------- ГАЛЕРИЯ (актуализирани снимки) ---------- */
+        /* ---------- ГАЛЕРИЯ ---------- */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -877,7 +865,7 @@
             color: #0a0a14;
         }
         
-        /* ---------- ФУТЪР ---------- */
+        /* ---------- ФУТЪР (лого във футъра) ---------- */
         footer { 
             background: #0a0a14; 
             color: #aaa; 
@@ -888,21 +876,10 @@
             border-top: 4px solid #c9a05e;
         }
         
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8em;
-            font-weight: 900;
-            background: linear-gradient(45deg, #e4c580, #f6e6b2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .footer-logo-img {
+            height: 100px;
+            width: auto;
             margin-bottom: 15px;
-        }
-        
-        .footer-logo span {
-            font-size: 0.6em;
-            display: block;
-            -webkit-text-fill-color: #c9a05e;
-            letter-spacing: 5px;
         }
         
         /* ---------- РЕСПОНСИВ ---------- */
@@ -918,6 +895,11 @@
             .nav-links { display: none; position: fixed; top: 80px; left: 0; width: 100%; background: #0a0a14; flex-direction: column; padding: 30px; gap: 20px; border-top: 2px solid #c9a05e; }
             .nav-links.active { display: flex; }
             .mobile-menu-btn { display: block; }
+            
+            .logo-img {
+                height: 55px;
+            }
+            
             header { padding: 120px 20px; min-height: 80vh; margin-top: -80px; }
             header h1 { font-size: 3.2em; }
             header .subtitle { font-size: 1.4em; }
@@ -942,10 +924,12 @@
 </head>
 
 <body>
-    <!-- НАВИГАЦИЯ -->
+    <!-- НАВИГАЦИЯ с лого изображение -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">Хидалго<span>КОННА БАЗА</span></a>
+            <a href="#home">
+                <img src="logo.konna.baza.hidalgo.webp" alt="Конна база Хидалго – лого" class="logo-img">
+            </a>
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
@@ -1111,7 +1095,7 @@
             </div>
         </section>
         
-        <!-- ГАЛЕРИЯ (с работещи Unsplash снимки) -->
+        <!-- ГАЛЕРИЯ -->
         <section id="gallery">
             <h2><i class="fas fa-camera"></i> Галерия</h2>
             <div class="gallery-grid">
@@ -1174,9 +1158,9 @@
         </section>
     </div>
     
-    <!-- ФУТЪР -->
+    <!-- ФУТЪР с лого -->
     <footer>
-        <div class="footer-logo">ХидалГО<span>КОННА БАЗА</span></div>
+        <img src="logo.konna.baza.hidalgo.webp" alt="Конна база Хидалго – лого" class="footer-logo-img">
         <p style="color:#c9a05e; margin-bottom: 20px; font-size: 1.2em; letter-spacing: 3px;">РАДОМИР · КВ. ВЪРБА</p>
         <p><i class="fas fa-map-marker-alt" style="color:#c9a05e;"></i> Радомир, квартал "Върба" 2300</p>
         <p><i class="fas fa-phone" style="color:#c9a05e;"></i> 0897 863 242 | 0896 759 505 | 0897 327 154</p>
