@@ -354,7 +354,7 @@
         .pricing-price {
             font-size: 2.2em;
             font-weight: 800;
-            color: #b48a4b; /* По-тъмен нюанс за по-добър контраст */
+            color: #b48a4b;
             margin: 20px 0;
         }
         
@@ -585,7 +585,7 @@
             border-color: #e4c580;
         }
         
-        /* ---------- КАЛЕНДАР НА СЪБИТИЯТА ---------- */
+        /* ---------- КАЛЕНДАР НА СЪБИТИЯТА – подобрен контраст ---------- */
         .events-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -607,7 +607,7 @@
         }
         
         .event-date {
-            color: #c9a05e;
+            color: #b48a4b; /* По-тъмен нюанс за по-добър контраст */
             font-weight: 700;
             font-size: 1.2em;
             display: flex;
@@ -633,7 +633,7 @@
         }
         
         .event-link {
-            color: #c9a05e;
+            color: #b48a4b; /* По-тъмен нюанс за по-добър контраст */
             text-decoration: none;
             font-weight: 600;
             display: inline-flex;
@@ -641,7 +641,7 @@
             gap: 8px;
         }
         
-        /* ---------- ОТЗИВИ ---------- */
+        /* ---------- ОТЗИВИ – подобрен контраст на датите ---------- */
         .reviews-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -696,11 +696,11 @@
         
         .review-date {
             font-size: 0.9em;
-            color: #888;
+            color: #6a6a7a; /* По-тъмен цвят за по-добър контраст */
             margin-top: 5px;
         }
         
-        /* ---------- ГАЛЕРИЯ ---------- */
+        /* ---------- ГАЛЕРИЯ – подобрен контраст на линка ---------- */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -760,12 +760,12 @@
         .photo-credit {
             text-align: center;
             margin-top: 15px;
-            color: #4a4a5a; /* По-тъмен цвят за по-добър контраст */
+            color: #4a4a5a;
             font-size: 0.95em;
         }
         
         .photo-credit a {
-            color: #c9a05e;
+            color: #b48a4b; /* По-тъмен нюанс за по-добър контраст */
             text-decoration: none;
         }
         
@@ -803,7 +803,7 @@
             margin-bottom: 18px;
         }
         
-        .contact-card h4 {
+        .contact-card h3 {
             font-size: 1.5em;
             margin-bottom: 12px;
             color: #1e1e2f;
@@ -930,7 +930,8 @@
             <a href="#home">
                 <img src="logo.konna.baza.hidalgo.webp" alt="Конна база Хидалго – лого" class="logo-img">
             </a>
-            <button class="mobile-menu-btn">
+            <!-- Мобилен бутон с достъпно име -->
+            <button class="mobile-menu-btn" aria-label="Отвори меню">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links">
@@ -946,7 +947,7 @@
         </div>
     </nav>
 
-    <!-- ХЕРО СЕКЦИЯ – с нов фон -->
+    <!-- ХЕРО СЕКЦИЯ -->
     <header id="home">
         <div class="hero-badge">
             <i class="fas fa-horse-head"></i> РАДОМИР, КВ. ВЪРБА <i class="fas fa-horse-head"></i>
@@ -1121,20 +1122,20 @@
                 <div class="contact-details">
                     <div class="contact-card">
                         <i class="fas fa-map-pin"></i>
-                        <h4>Адрес</h4>
+                        <h3>Адрес</h3>
                         <p><strong>Радомир, кв. Върба</strong></p>
                         <p style="margin-top: 10px;"><i class="fas fa-directions" style="color:#c9a05e;"></i> Само на 5 мин. от центъра</p>
                     </div>
                     <div class="contact-card">
                         <i class="fas fa-mobile-alt"></i>
-                        <h4>Телефони</h4>
+                        <h3>Телефони</h3>
                         <p><a href="tel:0897863242">0897 863 242</a> (основен)</p>
                         <p><a href="tel:0896759505">0896 759 505</a> / <a href="tel:0897327154">0897 327 154</a> (събития)</p>
                         <p style="margin-top: 8px;"><i class="fas fa-clock" style="color:#c9a05e;"></i> Само с предварително записване</p>
                     </div>
                     <div class="contact-card">
                         <i class="fas fa-envelope"></i>
-                        <h4>Имейл</h4>
+                        <h3>Имейл</h3>
                         <p><a href="mailto:emilivasileva01@gmail.com">emilivasileva01@gmail.com</a></p>
                         <p style="margin-top: 8px;"><i class="fas fa-user"></i> Емили – инструктор</p>
                     </div>
