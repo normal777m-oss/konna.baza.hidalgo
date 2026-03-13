@@ -16,9 +16,17 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://konnabaza-hidalgo.eu">
     
-    <!-- Fonts & Icons -->
+    <!-- Preconnect за външни ресурси (ускорява връзката) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts – синхронен, но с display=swap и preconnect -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Font Awesome – асинхронно зареждане (не блокира рендерирането) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -607,7 +615,7 @@
         }
         
         .event-date {
-            color: #b48a4b; /* По-тъмен нюанс за по-добър контраст */
+            color: #b48a4b;
             font-weight: 700;
             font-size: 1.2em;
             display: flex;
@@ -633,7 +641,7 @@
         }
         
         .event-link {
-            color: #b48a4b; /* По-тъмен нюанс за по-добър контраст */
+            color: #b48a4b;
             text-decoration: none;
             font-weight: 600;
             display: inline-flex;
@@ -696,7 +704,7 @@
         
         .review-date {
             font-size: 0.9em;
-            color: #6a6a7a; /* По-тъмен цвят за по-добър контраст */
+            color: #6a6a7a;
             margin-top: 5px;
         }
         
@@ -765,7 +773,7 @@
         }
         
         .photo-credit a {
-            color: #b48a4b; /* По-тъмен нюанс за по-добър контраст */
+            color: #b48a4b;
             text-decoration: none;
         }
         
@@ -960,7 +968,7 @@
         <a href="#contact" class="hero-button"><i class="fas fa-calendar-check"></i> ЗАПАЗИ ЧАС</a>
     </header>
     
-    <!-- Основно съдържание – добавен main елемент за достъпност -->
+    <!-- Основно съдържание -->
     <main>
         <div class="container">
             <!-- УСЛУГИ -->
@@ -1115,7 +1123,7 @@
                 </div>
             </section>
             
-            <!-- КОНТАКТИ с точна карта и Facebook линк -->
+            <!-- КОНТАКТИ -->
             <section id="contact" class="contact">
                 <h2><i class="fas fa-address-card"></i> Свържете се с нас</h2>
                 
@@ -1152,7 +1160,7 @@
                     </iframe>
                 </div>
                 
-                <!-- СОЦИАЛНИ МРЕЖИ – с актуален Facebook линк -->
+                <!-- СОЦИАЛНИ МРЕЖИ -->
                 <div class="social-links">
                     <a href="https://www.facebook.com/profile.php?id=61563782960294" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i> Конна База Хидалго</a>
                     <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i> @konnabazahidalgo</a>
@@ -1162,7 +1170,7 @@
         </div>
     </main>
     
-    <!-- ФУТЪР с лого -->
+    <!-- ФУТЪР -->
     <footer>
         <img src="logo.konna.baza.hidalgo.webp" alt="Конна база Хидалго – лого" class="footer-logo-img">
         <p style="color:#c9a05e; margin-bottom: 20px; font-size: 1.2em; letter-spacing: 3px;">РАДОМИР · КВ. ВЪРБА</p>
